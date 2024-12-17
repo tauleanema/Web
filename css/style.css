@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body {
+    margin: 0px;
+    font-family: 'Open Sans';
+}
+
+header {
+
+    background: linear-gradient(-45deg, #1e8cae, #335E94);
+
+    padding: 16px 0px;
+    position: fixed;
+
+    top: 0px;
+    left: 0px;
+    width: 100%;
+
+    z-index: 3;
+
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+
+}
+
+p {
+    line-height: 145%;
+}
+main {
+    min-height: 100dvh;
+    padding-top: 70px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    font-size: 0.8rem;
+    text-decoration: none;
+    margin-right: 45px;
+    text-transform: uppercase;
+
+    font-family: Raleway;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #bde4ff;
+}
+
+nav,
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+
+footer {
+    background: linear-gradient(-45deg, #1e8cae, #335E94);
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+#logo-link {
+    height: 50px;
+    filter: sepia(70%);
+
+
+}
+
+
+.container {
+    padding-bottom: 20px;
+}
+
+.video-div {
+    height: 75dvh;
+    min-height: 400px;
+    background-color: hsla(202, 32%, 15%, 0.682);
+}
+
+.section-div {
+    height: 40dvh;
+    min-height: 400px;
+    background-color: hsla(203, 45%, 14%, 0.658);
+}
+
+#index-video {
+    width: 100%;
+    height: inherit;
+    min-height: inherit;
+    object-fit: cover;
+
+    position: absolute;
+    z-index: -1;
+}
+
+.index-info {
+    height: inherit;
+    min-height: inherit;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.index-info h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
+
+.btn-inscriere {
+    margin-top: 30px;
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    background-color: #269e2edf;
+    max-width: fit-content;
+    padding: 10px;
+    border-radius: 5px;
+
+    transition: all 0.5s;
+}
+
+.btn-inscriere:hover {
+    color: #269e2edf;
+    background-color: white;
+    border-color: #269e2edf;
+}
+
+section>h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.carduri {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    border: 1px solid rgb(234, 227, 227);
+    width: 33.33%;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 1px 0px 10px rgb(211, 206, 206);
+}
+
+.card:hover {
+    box-shadow: 1px 0px 20px rgb(179, 200, 244);
+
+}
+
+.card:hover>img {
+    transform: scale(1.10);
+}
+
+.card>h3 {
+    text-align: center;
+}
+
+.card>img {
+    height: 90px;
+    border-radius: 50%;
+    margin: 10px auto;
+    display: block;
+
+    transition: 0.3s all;
+}
+.card1 {
+    background: linear-gradient(-45deg, #f4f5f6, #bbd3f0), url("../images/punct.jpg");
+}
+
+
+#inscrieri-section {
+    background: url("../images/inscrieri.jpg");
+    background-size: cover;
+    background-position: 10% 30%;
+}
+
+.inscriere-info {
+    display: flex;
+    gap: 15px;
+}
+
+.card-inscriere {
+    width: 50%;
+    box-shadow: 1px 0px 10px rgb(211, 206, 206);
+    padding: 0px 20px 20px 20px;
+    border-radius: 5px;
+
+
+}
+
+.profesor {
+    overflow: auto;
+}
+
+.profesor img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    float: left;
+    padding: 15px;
+    object-fit: cover;
+}
+
+#materiale-section {
+    background: url("../images/materiale1.jpg");
+    background-size: cover;
+    background-position: 30% 50%;
+
+}
+
+#alfabetizare-section {
+    background: url("../images/portret.jpg");
+    background-size: cover;
+    background-position: 30% 50%;
+}
+
+#limbaj-section {
+    background: url("../images/limbaj.jpg");
+    background-size: cover;
+    background-position: 30% 50%;
+}
+
+#compozitie-section {
+    background: url("../images/compozitie1.jpg");
+    background-size: cover;
+    background-position: 30% 50%;
+}
+
+#istorie-section {
+    background: url("../images/istorie.jpg");
+    background-size: cover;
+    background-position: 30% 50%;
+}
+#manuale-section {
+    background: url("../images/manuale.jpg");
+    background-size: cover;
+    background-position: 30% 50%; 
+}
+
+.input-form {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1p solid #335E94;
+    border-color: #335E94 !important;
+}
+
+.input-form:focus {
+    outline: 2px solid blue;
+}
+
+.select-form {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+#transmite {
+    display: block;
+    margin-top: 20px;
+    font-size: 16px;
+    font-family: 'Open Sans';
+    padding: 7px;
+    border-radius: 5px;
+    border: none;
+    background-color: #335E94;
+    color: white;
+    cursor: pointer;
+}
+
+.imagine {
+    border: 2px solid rgb(230, 212, 212);
+    width: 40%;
+    height: 50%;
+ 
+
+    padding: 5px;
+
+
+}
+
+iframe {
+    width: 50dvh;
+}
+
+.materiale {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.materiale a {
+    width: 160px;
+    padding: 30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    text-align: center;
+    border-radius: 10px;
+    color: #1f6bc9;
+    transition: 0.3s all;
+
+}
+
+.materiale a:hover {
+    transform: scale(1.05);
+    box-shadow: #1f6bc95b 0px 7px 29px 0px;;
+}
+
+.materiale img {
+    width: 140px;
+}
+
+@media (max-width: 968px) {
+
+    html {
+        font-size: 15px;
+    }
+    .carduri,
+    .inscriere-info {
+        flex-wrap: wrap;
+    }
+
+    .card,
+    .card-inscriere {
+        width: 100%;
+    }
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../images/logo.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <title>Înscrie-te la curs</title>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="../index.html"> <img id="logo-link" src="../images/link-logo.png"> </a>
+            <a href="inscrieri.html">Înscrieri</a>
+            <a href="materiale.html">Materiale</a>
+            
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="inscrieri-section">
+
+            <div class="section-div">
+
+
+
+                <div class="container index-info" data-aos="fade-right">
+                    <h1>Înscrie-te la curs </h1>
+                    <h2> Dezvoltă lumea fascinantă a Artelor plastice</h2>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="container">
+            <h1 data-aos="fade-up"> Ești doar la câțiva pași distanță</h1>
+
+            <div class="inscriere-info">
+
+                <div class="card-inscriere" data-aos="fade-up">
+                    <h2>Profesorul cursului</h2>
+                    <div class="profesor">
+
+                        <img src="../images/eu.jpg">
+                        <p>
+                            Profesorul cursului este Țaulean Ema, profesor de artă plastică la Instituția Publică Liceul
+                            Teoretic Visoca, satul Visoca raionul Soroca, cu o experiență în activitate de 40 ani.
+
+
+                        </p>
+                    </div>
+
+                    <b>Specialitatea: </b> <span> Arta plastică</span><br />
+                    <b>E-mail:</b> <a href="mailto:tauleanema@gmail.com">tauleanema@gmail.com</a>
+
+                </div>
+
+                <div class="card-inscriere" data-aos="fade-up">
+                    <h2>Completează formularul</h2>
+                    <form id="formular" method="post" action="https://sheetdb.io/api/v1/828knla548fcn">
+                        <label for="nume">Nume, Prenume</label>
+                        <input required class="input-form" id="nume" name="data[nume]" type="text">
+
+                        <label for="email">Email</label>
+                        <input required class="input-form" id="email" name="data[email]" type="email">
+
+                        <label>Clasa</label>
+                        <br />
+                        <select class="select-form" name="data[clasa]">
+                            <option value="V">V</option>
+                            <option value="VI">VI</option>
+                            <option value="VII">VII</option>
+                        </select>
+
+                        <select class="select-form" name="data[litera]" >
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                        </select>
+
+                        <input type="submit" value="Transmite" id="transmite">
+                    </form>
+                </div>
+
+            </div>
+
+            <div>
+                <h2>Ai o intrebare?</h2>
+                <div class="fb-comments" data-href="http://tekwill.online/taulean-ema" data-numposts="5"
+                    data-width="100%" data-order-by="reverse_time"></div>
+            </div>
+
+        </section>
+
+
+    </main>
+
+    <footer>
+        <h3>Țaulean Ema - 2024 ©</h3>
+    </footer>
+    <script src="../js/main.js"></script>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+   
+        var form = document.getElementById('formular');
+        form.addEventListener("submit", e => {
+            e.preventDefault();
+            fetch(form.action, {
+                method: "POST",
+                body: new FormData(document.getElementById("formular")),
+            }).then(() =>{
+                alert("Multumesc !");
+                form.reset();
+            });
+        });
+   
+   </script>
+</body>
+
+</html>
